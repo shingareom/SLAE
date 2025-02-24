@@ -1,0 +1,1 @@
+/home/fuzboxz/Learning/SLAE/compilec.sh
