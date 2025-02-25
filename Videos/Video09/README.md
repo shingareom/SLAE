@@ -13,8 +13,8 @@ Lets get started...
 ### Step 1: Starting GDB
 Start GDB with the compiled `HelloWorld` binary:
 
-```bash
-gdb ./HelloWorld -q
+```diff
++gdb ./HelloWorld -q
 ```
 
 This will load the program into GDB, where you can begin debugging.
@@ -22,14 +22,14 @@ This will load the program into GDB, where you can begin debugging.
 ### Step 2: Disassembling the `_start` function
 In this program, we focus on the `_start` function, which is the entry point of the program. To disassemble the code:
 
-```bash
-disassemble _start
+```diff
++disassemble _start
 ```
 
 This provides a detailed view of the assembly instructions executed at the entry point. Here's an example of what you might see:
 
-```
-+ (0x0000000000401000 <+0>:     mov    eax,0x1)
+```diff
+0x0000000000401000 <+0>:     mov    eax,0x1
 0x0000000000401005 <+5>:     mov    edi,0x1
 0x000000000040100a <+10>:    movabs rsi,0x402000
 0x0000000000401014 <+20>:    mov    edx,0x29
@@ -46,8 +46,8 @@ This sequence of instructions handles writing the string and exiting the program
 ### Step 3: Exploring Variables
 Use the `info variables` command to list the variables defined in the program:
 
-```bash
-info variables
+```diff
++info variables
 ```
 
 The output shows non-debugging symbols like `hello_world`, `var1`, `var2`, and `repeat_buffer`. These correspond to data stored in memory.
@@ -56,8 +56,8 @@ The output shows non-debugging symbols like `hello_world`, `var1`, `var2`, and `
 
 To view the contents of the memory at a specific address, use the `x` (examine) command with appropriate format specifiers. For example:
 
-```bash
-x/2xb &var1
+```diff
++x/2xb &var1
 ```
 
 This shows two bytes starting from the address of `var1`:
@@ -68,8 +68,8 @@ This shows two bytes starting from the address of `var1`:
 
 Similarly, you can use `x/xg` to examine a larger memory region:
 
-```bash
-x/xg &var4
+```diff
++x/xg &var4
 ```
 
 This displays a 64-bit value:
@@ -81,8 +81,8 @@ This displays a 64-bit value:
 ### Step 5: Setting Breakpoints and Stepping Through Code
 To analyze the program flow, set breakpoints at key locations:
 
-```bash
-break *0x0000000000401000  # Set a breakpoint at _start
+```diff
++break *0x0000000000401000  # Set a breakpoint at _start
 ```
 
 Then, use `r` to run the program and `nexti` or `stepi` to step through the instructions one by one.
@@ -90,7 +90,7 @@ Then, use `r` to run the program and `nexti` or `stepi` to step through the inst
 ### Step 6: Inspecting Registers
 You can inspect the registers using the `info registers` command. This provides a snapshot of the current state of the CPU registers:
 
-```bash
+```diff
 info registers
 ```
 
@@ -109,8 +109,8 @@ rsi            0x402000            4202496
 
 Using `x/128xb &repeat_buffer`, you can examine larger buffers and see how data is stored in memory. For instance:
 
-```bash
-x/128xb &repeat_buffer
+```diff
++x/128xb &repeat_buffer
 ```
 
 Output might show memory values like this:
