@@ -197,6 +197,10 @@ $1 = 5
 ```
 
 ---
+![OP 1](./image1.png)
+---
+![OP 1](./image2.png)
+---
 
 ### **🔥 Pro Tips**
 ✔️ Use `Ctrl + X` → `A` to **toggle TUI mode**.  
