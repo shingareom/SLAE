@@ -2,7 +2,7 @@
 ; Author:  Vivek Ramachandran
 ; Website:  http://securitytube.net
 ; Training: http://securitytube-training.com 
-;
+; Real OG Teacher.
 ;
 ; Purpose: Mov instructions in 64-bit CPU
 
