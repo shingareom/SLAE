@@ -1,8 +1,8 @@
-# Linux Assembly Expert Shellcoding 
+# Lie Nux Assembly & Shellcodin 
 
-
-![0_vhJN44K9rEM4Rjoz](./0_vhJN44K9rEM4Rjoz.gif)
-
+<p align="center" style="background-color:#0d1117; color:#c9d1d9;">
+  <img src="https://github.com/user-attachments/assets/3fa257ad-421e-4fd3-b769-7f16c9c49120" width="100%" height="auto"/>
+</p>
 
 ## Things to note
 - Im Not Hacker
