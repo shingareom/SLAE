@@ -1,7 +1,7 @@
 # Linux Assembly Expert Shellcoding 
 
 
-![0_vhJN44K9rEM4Rjoz](https://github.com/user-attachments/assets/7530d484-8068-436c-891b-d6d791685c36)
+![0_vhJN44K9rEM4Rjoz](./0_vhJN44K9rEM4Rjoz.gif)
 
 
 ## Things to note
